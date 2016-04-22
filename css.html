@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	box-shadow: 0px 5px;
+	background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, aqua , DeepSkyBlue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, aqua, DeepSkyBlue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, aqua, DeepSkyBlue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, aqua , DeepSkyBlue); /* Standard syntax (must be last) */
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: black;
+	color: white;
+	border-radius: 8px;
+}
+
+.container-fluid {
+color:red;
+}
+
+h3 {
+color: black;
+}
+
+.row {
+color: black;
+}
+</style>
+</head>
+<body>
+
+<!-- List at top of page -->
+<!-- List takes format from style above -->
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<!-- . in CSS = class selector -->
+<!-- # in CSS = id selector -->
+<div class="container-fluid">
+  <h1>h1 Bootstrap heading (36px)<small> test small text</small></h1>
+  <h2>h2 Bootstrap heading (30px)<small><mark> marked text</mark></small></h2>
+  <h3>h3 Bootstrap heading (24px)</h3>
+  <h4>h4 Bootstrap heading (18px)</h4>
+  <h5>h5 Bootstrap heading (14px)</h5>
+  <h6>h6 Bootstrap heading (12px)</h6>
+  
+  <div class="row">
+	<div class="col-md-6"><abbr title="Abbreviation">Abbr test</abbr></div>
+	<div class="col-md-6">test	</div>
+</div>
+	<!--Quote Tests - top row -->
+	<div class="row">
+		<div class="col-md-6"><h2>Quote Test</h2>Default Block Quote</div>
+		<div class="col-md-6"><h2>Quote Test</h2><p>Reversed Block Quote</p></div>
+		</div>
+	
+	<!--Quoted text and footer columns -->
+	<div class="row">
+		<div class="col-md-6">
+		<blockquote>This is a pretty good quote
+		<footer>Ben</footer>
+		</blockquote></div>
+		
+		<div class="col-md-6">
+		<blockquote class = "blockquote-reverse">This is a pretty good reversed quote opposite to the normal quote
+		<footer>Ben</footer>
+		</blockquote></div>
+	</div>	
+	
+	<div class="row">
+		<div class="col-md-6"><kbd>This part of text is confident and you should listen to it </kbd></div>
+		<div class="col-md-6"><pre>This is an example text box, for an example</pre></div>
+	</div><!-- row -->
+
+
+</body>
+</html>
