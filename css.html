@@ -16,26 +16,48 @@
 
 </script>
 <style>
-ul {
+
+/* overwriting bootstrap */
+.navbar.navbar-inverse{
+
+	background-color: maroon;
+	box-shadow: 7px 10px 5px grey;
+}
+
+.navbar-brand{
+	color:white;
+}
+
+.navbar-brand:hover{
+	color: cyan;
+}
+
+
+#box{
+	display: block;
+	display: inline-block;
+	width: 1920px;
+	height: 50px;
+	box-shadow: 6px 10px 10px grey;
+	background: #3B3636;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+
+ul {	
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-	box-shadow: 0px 5px;
-	background: aqua; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, aqua , DeepSkyBlue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, aqua, DeepSkyBlue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, aqua, DeepSkyBlue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, aqua , DeepSkyBlue); /* Standard syntax (must be last) */
 }
 
 li {
+/* keeps list on top to the left/horizontal */
     float: left;
 }
 
 li a {
     display: block;
-    color: black;
+    color: #E5DCDC;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -43,6 +65,12 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #111;
+}
+
+.b {
+	list-style-type: none;
+	width: 160px;
+	text-align: left;
 }
 
 .active {
@@ -56,35 +84,59 @@ color:red;
 }
 
 h3 {
-color: black;
+	color: black;
 }
 
 .row {
-color: black;
+	color: black;
 }
 
 #shadowbox {
-display: block;
-display: inline-block;
-float: right;
-width: 200px;
-height: 200px;
-box-shadow: 6px 10px 25px grey;
-border-radius: 25px;
+	display: block;
+	display: inline-block;
+	float: right;
+	width: 200px;
+	height: 200px;
+	box-shadow: 6px 10px 25px grey;
+	border-radius: 25px;
+}
+
+#ayy {
+text-size: 20px;
+
 }
 </style>
 </head>
 <body>
 
 <!-- List at top of page -->
-<!-- List takes format from style above -->
+<!-- List takes format from style above -->  
+<div class="row">
+<div class="col-md-12">
+<div id = "box">
 <ul>
+  <a class="navbar-brand" href="#">Filthy Failures</a>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
+<div class="dropdown" style = "float:right;">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Drop List<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+		</ul>
+		</div>
+	</div><!-- box -->
+	</div><!-- col -->
+</div><!-- row -->
 
+<!-- br's keep header from content on load -->
+<br>
+<br>
+<br>
 <!-- . in CSS = class selector -->
 <!-- # in CSS = id selector -->
 <div class="container-fluid">
@@ -131,8 +183,5 @@ border-radius: 25px;
 		<div id="shadowbox"><img src="star_wars_logo.jpg" class="img-rounded" width="200px" height ="200px"></div>
 		</div>
 	</div>
-	
-
-	
 </body>
 </html>
