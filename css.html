@@ -22,7 +22,7 @@ ul {
     padding: 0;
     overflow: hidden;
 	box-shadow: 0px 5px;
-	background: red; /* For browsers that do not support gradients */    
+	background: aqua; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left, aqua , DeepSkyBlue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, aqua, DeepSkyBlue); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, aqua, DeepSkyBlue); /* For Firefox 3.6 to 15 */
@@ -61,6 +61,16 @@ color: black;
 
 .row {
 color: black;
+}
+
+#shadowbox {
+display: block;
+display: inline-block;
+float: right;
+width: 200px;
+height: 200px;
+box-shadow: 6px 10px 25px grey;
+border-radius: 25px;
 }
 </style>
 </head>
@@ -102,6 +112,7 @@ color: black;
 		<footer>Ben</footer>
 		</blockquote></div>
 		
+		<!-- Reverse block quote on other side -->
 		<div class="col-md-6">
 		<blockquote class = "blockquote-reverse">This is a pretty good reversed quote opposite to the normal quote
 		<footer>Ben</footer>
@@ -110,9 +121,18 @@ color: black;
 	
 	<div class="row">
 		<div class="col-md-6"><kbd>This part of text is confident and you should listen to it </kbd></div>
-		<div class="col-md-6"><pre>This is an example text box, for an example</pre></div>
+		<!-- scrollable pre box -->
+		<div class="col-md-6"><pre class="pre-scrollable">This is an example text box, for an example<br> ayy lmao</pre></div>
 	</div><!-- row -->
+	
+	<!-- Rounded image/shadow test -->
+	<div class="row">
+	<div class="col-md-6">
+		<div id="shadowbox"><img src="star_wars_logo.jpg" class="img-rounded" width="200px" height ="200px"></div>
+		</div>
+	</div>
+	
 
-
+	
 </body>
 </html>
